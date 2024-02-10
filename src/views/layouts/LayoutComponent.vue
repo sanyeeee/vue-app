@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <Header />
+        <Header @shareData_="getData" />
         <router-view />
     </div>
 </template>
@@ -13,6 +13,12 @@ export default {
 
     components: {
         Header
+    },
+
+    methods: {
+        getData(data) {
+            console.log(data);
+        }
     }
 }
 </script>

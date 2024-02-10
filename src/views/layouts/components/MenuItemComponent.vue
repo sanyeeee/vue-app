@@ -1,8 +1,8 @@
 
 <template>
-    <div>
-        Menu item
-    </div>
+    <li>
+        {{ title }}
+    </li>
 </template>
 
 <script>
